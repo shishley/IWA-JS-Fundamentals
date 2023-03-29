@@ -33,6 +33,7 @@ const addHandler = () => {
   const newValue = parseInt(number.value) + STEP_AMOUNT; //can do same cze in diff scope {}
   number.value = newValue;
   //(now add condtion
+  //=== means equals in if statement
   if (subtract.disabled === true) {
     subtract.disabled = false;
   }
@@ -47,3 +48,14 @@ const addHandler = () => {
 
 subtract.addEventListener("click", subtractHandler); //listen to click of - button variable declared
 add.addEventListener("click", addHandler); //then after , do this... run subtracthandler
+
+//long way example
+if (1 === 1) {
+  /*this is true*/ console.log("test");
+} else {
+  console.log("not true");
+}
+//can write same thing like this
+console.log(1 === 1 ? "test" : "not true");
+//logical && and,logical || or, !== not
+//+ plus, - minus, / divide, * multiple, % how much remains, **power by
