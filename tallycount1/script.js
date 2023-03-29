@@ -4,6 +4,9 @@
 /*import { hello as helloA} from "./code-a.js"; //pulling from the split files*/
 /*import { hello as helloB} from "./code-b.js"; //as for named exports*/
 
+let exampleA = 5; //use let when declaring dont shortcut exampleA=5; first tym u declare
+exampleA = 10; //re-assign the value of exampleA cze its not const
+//always use const unless u know the value gonna change at some point
 const MAX_NUMBER = 5; //defining global constants that never changes
 const MIN_NUMBER = -5;
 const STEP_AMOUNT = 1;
