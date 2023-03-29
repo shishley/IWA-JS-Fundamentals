@@ -59,3 +59,12 @@ if (1 === 1) {
 console.log(1 === 1 ? "test" : "not true");
 //logical && and,logical || or, !== not
 //+ plus, - minus, / divide, * multiple, % how much remains, **power by
+const jo = 5; //typeof is a num
+toString(jo); //coerce num into string
+const jel = "081";
+parseInt(jel); //turn string into num
+true.toString(); //turning boolean into 'true' string
+Boolean(jel); //turning string to boolean
+priceofshoe: 0; //means price is 0 technically free
+priceofshoe: null; //means theres no price
+priceofshoe: undefined; //means i dont understand wat u asking, i dont hav answer
