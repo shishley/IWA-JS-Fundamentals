@@ -1,4 +1,7 @@
+/*start styling mobile first*/
+
 :root {
+  /*to pull colors throughtout app for consistent color scheme*/
   --color-green: rgb(16, 95, 16);
   --color-white: white;
   --color-dark-grey: rgb(37, 37, 37);
@@ -75,6 +78,7 @@ header {
 }
 
 .counter_button:active {
+  /*to change color when clicked*/
   background: var(--color-medium-grey);
   transform: translateY(4%);
 }
@@ -96,4 +100,12 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: small;
+}
+
+/*error*/
+
+.error {
+  background: pink;
+  padding: 2rem;
+  color: brown;
 }

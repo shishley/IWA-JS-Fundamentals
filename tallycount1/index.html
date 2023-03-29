@@ -7,17 +7,29 @@
     <link rel="stylesheet" href="/tallycount1/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--link google fonts in html instead of css file for better performance-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <title>countapp</title>
+    <!--script tag loads n runs the js-->
+    <script src="/tallycount1/script.js" type="module" defer></script><!--type module to help import split code files-->
+    <!--defer tells browser to run html 1st before running js-->
 
-    <script src="/tallycount1/script.js" defer></script>
+    <!--defer -downloads, parse, run js only after html ready-->
+    <!--async -downloads, parse, run immediate in background-->
+    
+
   </head>
   <body>
     <header>
       <h1 class="header_title">Tally Counter</h1>
+
+      <noscript
+        ><!--can warn uses if ur js files arent running in their browser-->
+        <p class="error">This Site Requires Javascript To Run</p>
+      </noscript>
     </header>
     <aside class="controls">
       <label>
@@ -46,6 +58,7 @@
         value="0"
       /><!--usind a data key to find attribute in js file-->
       <div class="counter_actions">
+        <!--use data key so u can find attribute in js file-->
         <button data-key="subtract" class="counter_button counter_button_first">
           -
         </button>
