@@ -68,3 +68,16 @@ Boolean(jel); //turning string to boolean
 priceofshoe: 0; //means price is 0 technically free
 priceofshoe: null; //means theres no price
 priceofshoe: undefined; //means i dont understand wat u asking, i dont hav answer
+//know when to use which inverted comma
+const declare1 = "sihle";
+const declare2 = "sihle's child";
+const declare3 = "sihle's child";
+const declare4 = `sihle's child says: "hello"`;
+
+const one = 1;
+const two = 2;
+console.log(one + two); //only use the + sign when adding numbers to avoid auto concatination
+//rsult 3
+//when u wanna concatinate, use interpolation
+console.log(`${one} ${two}`); //use backticks , grab the value n put it as a string
+//result 1 2
