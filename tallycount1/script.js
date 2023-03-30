@@ -1,8 +1,7 @@
 //console.log('awe'); check if script is linked n working only not for production code
 //console.error not recommened rathr throw new Error('something went wrong')
 
-/*import { hello as helloA} from "./code-a.js"; //pulling from the split files*/
-/*import { hello as helloB} from "./code-b.js"; //as for named exports*/
+//export {subtractHandler};
 
 let exampleA = 5; //use let when declaring dont shortcut exampleA=5; first tym u declare
 exampleA = 10; //re-assign the value of exampleA cze its not const

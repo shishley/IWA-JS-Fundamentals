@@ -1,5 +1,8 @@
 //more notes
 //long way example
+
+//import { subtractHandler} from "./script.js"; //pulling from the split files*/
+
 if (1 === 1) {
   /*this is true*/ console.log("test");
 } else {
@@ -43,3 +46,30 @@ const eg2 = 15 || 7 || "string" || false || 7 || 9;
 
 const eg3 = null || false || 0 || 15 || 7 || "string" || 7 || 9;
 //return 15   cze all the prev values are falsy stopped at 15 truthy
+
+//challenge from IWA_7.4: Challenge 2
+
+/*To display the nickname is present should be displayed only n if no nickname then firstname is displayed, you can use a ternary operator.
+
+const nickname = "Timmy";
+const firstname = "Timothy";
+const nickname= "Timmy";
+const firstname = "Timothy";
+
+console.log("Good Morning, ${nickname} || {firstname}!") //original with error
+
+solution
+
+console.log(`Good Morning, ${nickname ? nickname : firstname}!`);
+The ternary operator nickname ? nickname : firstname checks if nickname is truthy (i.e., not null or undefined), and if so, it uses nickname. If nickname is falsy, it uses firstname. The backticks ``````````````````````````` around the string allow you to use string interpolation with ${}.
+
+
+what happens  if you change const nickname = null ;
+If you change const nickname = "Timmy"; to const nickname = null;, the ternary operator in the console.log statement will treat nickname as falsy because null is falsy in JavaScript. As a result, the string template will evaluate to Good Morning, Timothy!, and the output will display "Timothy" instead of "Timmy".
+
+const nickname = null;
+const firstname = "Timothy";
+
+console.log(`Good Morning, ${nickname ? nickname : firstname}!`);
+// Output: Good Morning, Timothy!
+In this case, the condition nickname ? nickname : firstname evaluates to firstname since nickname is null (i.e., falsy). Therefore, the output is Good Morning, Timothy!
