@@ -49,27 +49,33 @@ const eg3 = null || false || 0 || 15 || 7 || "string" || 7 || 9;
 
 //challenge from IWA_7.4: Challenge 2
 
-/*To display the nickname is present should be displayed only n if no nickname then firstname is displayed, you can use a ternary operator.
+/*if nickname is present should be displayed but if its not
+ then firstname is displayed*/
 
 const nickname = "Timmy";
 const firstname = "Timothy";
-const nickname= "Timmy";
-const firstname = "Timothy";
+//original but wrong
+console.log("Good Morning, ${nickname} || {firstname}!");
 
-console.log("Good Morning, ${nickname} || {firstname}!") //original with error
+//solution1
+console.log(`Good Morning, ${nickname || firstname}!`);
+// Output: Good Morning, Timmy!
+/*cze nickname is not falsy cant move forward to next value*/
 
-solution
+/*const nickname = null;
+const firstname = "Timothy";*/
+console.log(`Good Morning, ${nickname || firstname}!`);
+// Output: Good Morning, Timothy!
+/*cze nickname is falsy (null) moves to evaluate firstname which is truthy*/
 
+//you can use a ternary operator. solution2
 console.log(`Good Morning, ${nickname ? nickname : firstname}!`);
-The ternary operator nickname ? nickname : firstname checks if nickname is truthy (i.e., not null or undefined), and if so, it uses nickname. If nickname is falsy, it uses firstname. The backticks ``````````````````````````` around the string allow you to use string interpolation with ${}.
+// Output: Good Morning, Timmy!
+/*checks if nickname is truthy ( not null or undefined)and if so it is
+ stops to use nickname.
 
-
-what happens  if you change const nickname = null ;
-If you change const nickname = "Timmy"; to const nickname = null;, the ternary operator in the console.log statement will treat nickname as falsy because null is falsy in JavaScript. As a result, the string template will evaluate to Good Morning, Timothy!, and the output will display "Timothy" instead of "Timmy".
-
-const nickname = null;
-const firstname = "Timothy";
-
+/*const nickname = null;
+const firstname = "Timothy";*/
 console.log(`Good Morning, ${nickname ? nickname : firstname}!`);
 // Output: Good Morning, Timothy!
-In this case, the condition nickname ? nickname : firstname evaluates to firstname since nickname is null (i.e., falsy). Therefore, the output is Good Morning, Timothy!
+/*If nickname is falsy, move forward to use firstname.*/
