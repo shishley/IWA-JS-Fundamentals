@@ -40,7 +40,7 @@ header {
 /*controls*/
 
 .controls {
-  background: palevioletred;
+  background: rgb(47, 128, 31);
 }
 
 /*counter*/
@@ -75,6 +75,7 @@ header {
 
 .counter_button:disabled {
   opacity: 0.2;
+  background: pink;
 }
 
 .counter_button:active {

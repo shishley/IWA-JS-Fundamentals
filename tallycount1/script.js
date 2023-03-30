@@ -49,6 +49,7 @@ const addHandler = () => {
 subtract.addEventListener("click", subtractHandler); //listen to click of - button variable declared
 add.addEventListener("click", addHandler); //then after , do this... run subtracthandler
 
+//more notes
 //long way example
 if (1 === 1) {
   /*this is true*/ console.log("test");
@@ -81,3 +82,15 @@ console.log(one + two); //only use the + sign when adding numbers to avoid auto 
 //when u wanna concatinate, use interpolation
 console.log(`${one} ${two}`); //use backticks , grab the value n put it as a string
 //result 1 2
+
+//&& (and and)if value before the && is true, hen it proceeds to next value
+//|| (or or)if value before the || is false, then it proceeds to next value
+
+const eg = 15 && 7 && "string" && false && 7 && 9;
+//return false   it stoped at it cze false is not true, if there was no false gonna return 9
+
+const eg2 = 15 || 7 || "string" || false || 7 || 9;
+//return 15   it stoped at it cze 15 is true not falsy
+
+const eg3 = null || false || 0 || 15 || 7 || "string" || 7 || 9;
+//return 15   cze all the prev values are falsy stopped at 15 truthy
