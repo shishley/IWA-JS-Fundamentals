@@ -79,3 +79,56 @@ const firstname = "Timothy";*/
 console.log(`Good Morning, ${nickname ? nickname : firstname}!`);
 // Output: Good Morning, Timothy!
 /*If nickname is falsy, move forward to use firstname.*/
+
+//objects
+
+const fam1 = {
+  name: "Grez",
+  surname: "Grooper",
+  age: 39,
+}; //declaring the inside of object, which are keys e.g. age
+//console.log(fam1.age) result is 39. allows us to organise into logical groups
+const fam2 = {
+  name: "Dolly",
+  surname: "Grooper",
+  age: 19,
+};
+//combined object within object
+const manyfamilies = {
+  Barrettfam: {
+    youngest: {
+      name: "Juo",
+      surname: "Barrett",
+      age: 3,
+      'inge': 44
+    },
+    oldest: {
+      name: "Perl",
+      surname: "Barrett",
+      age: 60,
+    },
+  },
+
+  Smithfam: {
+    youngest: {
+      name: "Sall",
+      surname: "Smith",
+      age: 5,
+    },
+    oldest: {
+      name: "Ray",
+      surname: "Smith",
+      age: 64,
+    },
+  },
+};
+//cant use dot notation on a number or split string without adding []
+manyfamilies.Barrettfam.inge
+manyfamilies.Barrettfam.['inge']
+
+const thisIsAVariableExample = ""; //camelCase
+const ThisIsAVariableExample = ""; //pascalCase
+const this_is_a_variable_example = ""; /*snakeCase used when pulling 
+from api but dont declare like this*/
+
+
