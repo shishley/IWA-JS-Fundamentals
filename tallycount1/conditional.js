@@ -81,7 +81,11 @@ console.log(`Good Morning, ${nickname ? nickname : firstname}!`);
 /*If nickname is falsy, move forward to use firstname.*/
 
 //objects
+//commenting objects using jsdoc really helpful to read code, ctrl click to go to where was created
 
+/**
+ * family one
+ */
 const fam1 = {
   name: "Grez",
   surname: "Grooper",
@@ -94,6 +98,9 @@ const fam2 = {
   age: 19,
 };
 //combined object within object
+/**
+ * familys that ran away
+ */
 const manyfamilies = {
   Barrettfam: {
     youngest: {
@@ -108,7 +115,9 @@ const manyfamilies = {
       age: 60,
     },
   },
-
+/**
+ * weird fam
+ */
   Smithfam: {
     youngest: {
       name: "Sall",
@@ -131,4 +140,19 @@ const ThisIsAVariableExample = ""; //pascalCase
 const this_is_a_variable_example = ""; /*snakeCase used when pulling 
 from api but dont declare like this*/
 
+//document object helps find things in html, qs allows to grab in html throu css syntax
+const exam = document.querySelector('button')
+exam.disabled = true
 
+//calling methods(func in objects)
+const object5 = {
+  run: 366,
+  user: 'Grag',
+  thisFunction: () => console.log('wateva')
+}
+//then call that function
+  object5.thisFunction()
+  //result yo
+
+//math built in obj, 10 + rouned off pie
+const rr= 10 + Math.round(Math.PI)
