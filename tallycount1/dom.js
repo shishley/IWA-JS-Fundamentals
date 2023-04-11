@@ -209,6 +209,8 @@ for (let i = 0; i < students.length; i++) {
   let sum = 0;
   for (let j = 0; j < students[i].testScores.length; j++) {
     sum += students[i].testScores[j];
+    //sum = Math.add(...students[i].testScores)
+    // for (const value in student[i].testScores)
   }
   const average = sum / students[i].testScores.length;
   students[i].averageScore = average;
@@ -231,3 +233,19 @@ we assign the average score to a new property called "averageScore" in each stud
   { name: "Alice Johnson", age: 16, grade: "10th", testScores: [85, 90, 95], averageScore: 90 }
 ]
 */
+
+/*
+for loop
+*/
+const egArray = ['A', 'B', 'C'];
+for (const varialeEG of egArray) {
+  console.log(varialeEG);//better way
+}
+for(let i=0; //declaring starting phase
+ i<egArray.length;//then declare condition so loop long as i smaller then lenth of array
+ i++//wat should happen after each loop, same as i=i+1
+){
+  console.log(egArray[i]);//traditional way 
+}
+//output: A B C
+
